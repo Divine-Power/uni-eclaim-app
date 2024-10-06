@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>University E-Claim</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>University E-Claim</h1>
+        </header>
+        <main>
+            <div id="claim-list" class="claim-list"></div>
+            <button id="submit-claim-btn">Submit a Claim</button>
+        </main>
+        <div id="claim-form" class="claim-form hidden">
+            <h2>Submit a Claim</h2>
+            <form id="form">
+                <label for="category">Claim Category</label>
+                <select id="category" required>
+                    <option value="Travel">Travel</option>
+                    <option value="Conference">Conference</option>
+                    <option value="Materials">Materials</option>
+                </select>
+                
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" required>
+                
+                <label for="description">Description</label>
+                <textarea id="description"></textarea>
+                
+                <button type="submit">Submit</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
